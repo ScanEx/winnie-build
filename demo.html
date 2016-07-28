@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>winnie build demo</title>
+        <script src="http://kosmosnimki.ru/lib/geomixer/geomixer-src.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="http://kosmosnimki.ru/lib/geomixer/geomixer.css" charset="utf-8">
+        <script src="dist/winnie.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="dist/winnie.css" charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var cm = nsGmx.createGmxApplication(document.body, {
+                app: {
+                    gmxMap: {
+                        mapID: '37TYY',
+                        apiKey: 'W4IH6K7CJ4'
+                    },
+                    layersTreeWidget: true,
+                    storytellingWidget: true
+                }
+            })
+
+            cm.create().then(function () {
+                console.log('ready')
+            }, function () {
+                console.error(arguments);
+            })
+        </script>
+    </body>
+</html>
