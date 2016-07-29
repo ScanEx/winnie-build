@@ -69,6 +69,10 @@ var coreComponents = [{
     srcDir: './external/GMXCommonComponents/animationHelpers',
     build: false
 }, {
+    id: 'CompositeScrollView',
+    srcDir: './external/GMXCommonComponents/CompositeScrollView',
+    build: false
+}, {
     id: 'SwitchingCollectionWidget',
     srcDir: './external/GMXCommonComponents/SwitchingCollectionWidget',
     build: false
