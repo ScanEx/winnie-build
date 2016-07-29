@@ -52,6 +52,11 @@ var coreComponents = [{
     distDir: './build',
     build: true
 }, {
+    id: 'AuthWidget',
+    srcDir: './external/GMXCommonComponents/AuthWidget',
+    distDir: './build',
+    build: true
+}, {
     id: 'DateInterval',
     srcDir: './external/GMXCommonComponents/DateInterval',
     build: false
