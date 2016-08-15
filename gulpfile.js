@@ -47,6 +47,15 @@ var coreComponents = [{
     srcDir: './external/GMXCommonComponents/GmxIconLayers',
     build: false
 }, {
+    id: 'GmxWidget',
+    srcDir: './external/GMXCommonComponents/GmxWidget',
+    build: false
+}, {
+    id: 'DropdownMenuWidget',
+    srcDir: './external/GMXCommonComponents/DropdownMenuWidget',
+    distDir: './build',
+    build: true
+}, {
     id: 'AuthManager',
     srcDir: './external/GMXCommonComponents/AuthManager',
     distDir: './build',
@@ -65,10 +74,6 @@ var coreComponents = [{
     srcDir: './external/GMXCommonComponents/LayersTree',
     distDir: './build',
     build: true
-}, {
-    id: 'GmxWidget',
-    srcDir: './external/GMXCommonComponents/GmxWidget',
-    build: false
 }, {
     id: 'animationHelpers',
     srcDir: './external/GMXCommonComponents/animationHelpers',
