@@ -10,3 +10,21 @@
 [submodule "external/Leaflet-IconLayers"]
 	path = external/Leaflet-IconLayers
 	url = git@github.com:ScanEx/Leaflet-IconLayers.git
+[submodule "external/CalendarWidget"]
+	path = external/CalendarWidget
+	url = git@github.com:ScanEx/CalendarWidget.git
+[submodule "external/ComponentsManager"]
+	path = external/ComponentsManager
+	url = git@github.com:ScanEx/ComponentsManager.git
+[submodule "external/DateInterval"]
+	path = external/DateInterval
+	url = git@github.com:ScanEx/DateInterval.git
+[submodule "external/IconSidebarControl"]
+	path = external/IconSidebarControl
+	url = git@github.com:ScanEx/IconSidebarControl.git
+[submodule "external/LayersTree"]
+	path = external/LayersTree
+	url = git@github.com:ScanEx/LayersTree.git
+[submodule "external/LayersTreeWidget"]
+	path = external/LayersTreeWidget
+	url = git@github.com:ScanEx/LayersTreeWidget.git
