@@ -88,7 +88,9 @@ var coreComponents = [{
     build: false
 }, {
     id: 'IconSidebarControl',
-    srcDir: './external/GMXCommonComponents/IconSidebarControl'
+    srcDir: './external/GMXCommonComponents/IconSidebarControl',
+    distDir: './dist',
+    build: false
 }, {
     id: 'ScrollView',
     srcDir: 'external/GMXCommonComponents/ScrollView',
