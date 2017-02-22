@@ -28,3 +28,9 @@
 [submodule "external/LayersTreeWidget"]
 	path = external/LayersTreeWidget
 	url = git@github.com:ScanEx/LayersTreeWidget.git
+[submodule "external/GridAnalysis"]
+	path = external/GridAnalysis
+	url = git@github.com:ScanEx/GridAnalysis.git
+[submodule "external/GMXCommonStyles"]
+	path = external/GMXCommonStyles
+	url = git@github.com:ScanEx/GMXCommonStyles.git

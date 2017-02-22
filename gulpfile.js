@@ -1,12 +1,12 @@
-var gulp = require('gulp')
-var path = require('path')
+var gulp = require('gulp');
+var path = require('path');
 
 var coreComponents = [{
     bowerComponent: 'jquery',
-    distFiles: ['dist/jquery.js']
+    distFiles: ['./dist/jquery.js']
 }, {
     bowerComponent: 'jquery-ui',
-    distFiles: ['jquery-ui.js']
+    distFiles: ['jquery-ui.js','themes/base/jquery-ui.css']
 }, {
     bowerComponent: 'handlebars',
     distFiles: ['handlebars.js']
@@ -17,17 +17,17 @@ var coreComponents = [{
     bowerComponent: 'backbone#1.1.2',
     distFiles: ['backbone.js']
 }, {
-    id: 'Leaflet-active-area',
-    bowerComponent: 'Mappy/Leaflet-active-area',
-    distFiles: ['./src/leaflet.activearea.js']
-}, {
+//     id: 'Leaflet-active-area',
+//     bowerComponent: 'Mappy/Leaflet-active-area',
+//     distFiles: ['./src/leaflet.activearea.js']
+// }, {
     id: 'Utils',
     srcDir: './external/GMXCommonComponents/Utils',
     build: false
 }, {
     id: 'Popover',
-    srcDir: './external/GMXCommonComponents/Popover',
-    distDir: './build',
+    srcDir: './external/GMXCommonComponents/Popover',    
+    distDir: './dist',
     build: true
 }, {
     id: 'translations',
@@ -35,12 +35,12 @@ var coreComponents = [{
 }, {
     id: 'CommonStyles',
     srcDir: './external/GMXCommonComponents/CommonStyles',
-    distDir: './build',
-    build: true
+    distDir: './dist',
+    build: false
 }, {
     id: 'Leaflet-IconLayers',
     srcDir: './external/Leaflet-IconLayers',
-    distDir: './src',
+    distDir: './dist',
     build: false
 }, {
     id: 'GmxIconLayers',
@@ -66,19 +66,23 @@ var coreComponents = [{
     distDir: './build',
     build: true
 }, {
-    id: 'DateInterval',
-    srcDir: './external/GMXCommonComponents/DateInterval',
-    build: false
-}, {
-    id: 'LayersTree',
-    srcDir: './external/GMXCommonComponents/LayersTree',
+    id: 'AlertWidget',
+    srcDir: './external/GMXCommonComponents/AlertWidget',
     distDir: './build',
     build: true
 }, {
-    id: 'animationHelpers',
-    srcDir: './external/GMXCommonComponents/animationHelpers',
+    id: 'DateInterval',
+    srcDir: './external/DateInterval',
     build: false
 }, {
+    id: 'LayersTree',
+    srcDir: './external/LayersTree/src',
+    build: false
+}, {
+//     id: 'animationHelpers',
+//     srcDir: './external/GMXCommonComponents/animationHelpers',
+//     build: false
+// }, {
     id: 'CompositeScrollView',
     srcDir: './external/GMXCommonComponents/CompositeScrollView',
     build: false
@@ -88,22 +92,21 @@ var coreComponents = [{
     build: false
 }, {
     id: 'IconSidebarControl',
-    srcDir: './external/GMXCommonComponents/IconSidebarControl',
-    distDir: './dist',
+    srcDir: './external/IconSidebarControl/dist',
     build: false
 }, {
     id: 'ScrollView',
     srcDir: 'external/GMXCommonComponents/ScrollView',
-    distDir: 'build',
-    build: true
-}, {
-    id: 'LayersTreeWidget',
-    srcDir: './external/GMXCommonComponents/LayersTreeWidget',
     distDir: './build',
     build: true
 }, {
+    id: 'LayersTreeWidget',
+    srcDir: './external/LayersTreeWidget',
+    distDir: './dist',
+    build: true
+}, {
     id: 'CalendarWidget',
-    srcDir: './external/GMXCommonComponents/CalendarWidget',
+    srcDir: './external/CalendarWidget',
     distDir: './build',
     build: true
 }, {
@@ -113,27 +116,51 @@ var coreComponents = [{
     build: true
 }, {
     id: 'StorytellingControl',
-    srcDir: './external/GMXCommonComponents/StorytellingControl',
+    srcDir: './external/GMXCommonComponents/StorytellingControl',    
     build: false
 }, {
     id: 'storytellingAccordeonControl',
-    srcDir: './external/GMXCommonComponents/StorytellingAccordeonControl',
+    srcDir: './external/GMXCommonComponents/StorytellingAccordeonControl',    
     build: false
+}, {
+    id: 'ShareIconControl',
+    srcDir: './external/GMXCommonComponents/ShareIconControl',
+    distDir: './build',
+    build: true
 }, {
     id: 'StateManager',
     srcDir: './external/GMXCommonComponents/StateManager',
     build: false
 }, {
+    id: 'PermalinkManager',
+    srcDir: './external/GMXCommonComponents/PermalinkManager',
+    build: false
+}, {
     id: 'ComponentsManager',
-    srcDir: './external/GMXCommonComponents/ComponentsManager',
+    srcDir: './external/ComponentsManager',
     distDir: './build',
     build: true
+}, {
+    id: 'GMXCommonStyles',
+    srcDir: './external/GMXCommonStyles',
+    distDir: './build',
+    build: false
+}, {
+    id: 'TransparencySliderWidget',
+    srcDir: './external/GMXCommonComponents/TransparencySliderWidget',
+    distDir: './build',
+    build: true
+}, {
+    id: 'GridAnalysis',
+    srcDir: './external/GridAnalysis',
+    distDir: './dist',
+    build: false
 }, {
     id: 'winnie-core',
     srcDir: './external/winnie-core',
     distDir: './dist',
     build: true
-}]
+}];
 
 require('./external/GMXBuilder')(gulp, {
     tempDir: './temp',
@@ -143,4 +170,4 @@ require('./external/GMXBuilder')(gulp, {
 }, [{
     id: 'winnie',
     components: coreComponents
-}])
+}]);
