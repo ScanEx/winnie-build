@@ -156,6 +156,10 @@ var coreComponents = [{
     distDir: './dist',
     build: false
 }, {
+    id: 'SvgTabFactory',
+    srcDir: './external/SvgTabFactory/dist',
+    build: false
+}, {
     id: 'winnie-core',
     srcDir: './external/winnie-core',
     distDir: './dist',
