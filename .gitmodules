@@ -4,9 +4,6 @@
 [submodule "external/GMXCommonComponents"]
 	path = external/GMXCommonComponents
 	url = git@github.com:ScanEx/GMXCommonComponents.git
-[submodule "external/winnie-core"]
-	path = external/winnie-core
-	url = git@github.com:kosmosnimki/winnie-core.git
 [submodule "external/Leaflet-IconLayers"]
 	path = external/Leaflet-IconLayers
 	url = git@github.com:ScanEx/Leaflet-IconLayers.git
