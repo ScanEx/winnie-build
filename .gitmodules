@@ -28,6 +28,9 @@
 [submodule "external/GridAnalysis"]
 	path = external/GridAnalysis
 	url = git@github.com:ScanEx/GridAnalysis.git
+[submodule "external/winnie-core"]
+	path = external/winnie-core
+	url = git@github.com:ScanEx/winnie-core.git
 [submodule "external/GMXCommonStyles"]
 	path = external/GMXCommonStyles
 	url = git@github.com:ScanEx/GMXCommonStyles.git
